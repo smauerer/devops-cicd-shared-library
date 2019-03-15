@@ -3,14 +3,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                script {
-                    log.info 'checkout'
-                }
-                git credentialsId: 'GIT', url: 'https://gitlab.ballpark.altemista.cloud/aburkard/devops-cicd-demo-project'
-            }
-        }
         stage('Build') {
             steps {
                 script {
