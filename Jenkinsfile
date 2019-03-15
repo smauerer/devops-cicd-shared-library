@@ -4,7 +4,7 @@ pipeline {
    
     stage('Checkout') {            
       steps {                
-        git credentialsId: 'GIT', url: 'https://github.com/smauerer/myRep.git'           
+        git credentialsId: 'GIT', url: 'https://github.com/smauerer/devops-cicd-shared-library.git'           
       }        
     }
     stage('MVN build') {            
